@@ -12,5 +12,8 @@ export class FilmPageComponent {
   @Input() Nom :string|undefined;
   @Input() Annee :number|undefined;
   @Input() Description :string|undefined;
+  @Input() imageURL :string|undefined;
+
+
 
 }
