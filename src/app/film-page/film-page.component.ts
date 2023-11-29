@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './film-page.component.css'
 })
 export class FilmPageComponent {
-  @Input Nom :string|undefined;
-  @Input Annee :number|undefined;
-  @Input Description 
+  @Input() Nom :string|undefined;
+  @Input() Annee :number|undefined;
+  @Input() Description :string|undefined;
 
 }
