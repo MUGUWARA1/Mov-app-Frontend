@@ -1,5 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import { Film } from '../Film';
+import { MoviesServiceService } from '../movies-service.service';
 
 @Component({
   selector: 'app-film-page',
@@ -8,12 +11,14 @@ import { CommonModule } from '@angular/common';
   templateUrl: './film-page.component.html',
   styleUrl: './film-page.component.css'
 })
-export class FilmPageComponent {
-  @Input() Nom :string|undefined;
-  @Input() Annee :number|undefined;
-  @Input() Description :string|undefined;
-  @Input() imageURL :string|undefined;
-
-
-
+export class FilmPageComponent implements OnInit{
+  film:any;
+  constructor(private route :ActivatedRoute,private moviesservice:MoviesServiceService) {}
+  ngOnInit(): void {
+    this.route.params.subscribe((param:any)=>{
+      const id =param['id'];
+      this.film=this.moviesservice.getByidFilm(id);
+  })
+  
+}
 }

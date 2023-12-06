@@ -2,9 +2,7 @@
 <div class="pl-2 p-3 " >
     <div class="row">
         <div *ngFor="let film of films"  class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-xs-7  col-sm-*">
-            <app-card-film [imageUrl]="film.imageURL"
-                            [title]="film.Nom"
-                            [annee]="film.annee" class="p-2"></app-card-film>
+            <app-card-film [film]="film"></app-card-film>
         </div>
     </div>
   </div>

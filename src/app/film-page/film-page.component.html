@@ -1,10 +1,13 @@
-<div style="display: inline-block;">
-    <div>
-        <img src={{imageURL}} alt="image de film" style="height: 500px; width:200px">
+<body>
+    <div style="display: inline-block;">
+        <div>
+            <img src={{film.url}} alt={{film.id}} style="height: 500px; width:200px">
+        </div>
+        <div>
+            <div><h1>{{film.Nom}}</h1></div>
+            <div><h4>{{film.annee}}</h4></div>
+            <div><p>{{film.Description}}</p></div>
+        </div>
     </div>
-    <div>
-        <div><h1>{{Nom}}</h1></div>
-        <div><h4>{{Annee}}</h4></div>
-        <div><p>{{Description}}</p></div>
-    </div>
-</div>
+    
+</body>

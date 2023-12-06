@@ -1,9 +1,9 @@
 
 <div class="card bg-secondary  " style="width: 20rem;height:35rem;" id="body-card" >
-    <img src={{imageUrl}} class="card-img-top" alt="..." style="height: 25rem;">
+    <img src={{film?.imageURL}} class="card-img-top" alt="..." style="height: 25rem;">
     <div class="card-body" >
-      <h5 class="card-title text-white">{{title}}</h5>
-      <p class="card-text text-white">{{annee}}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title text-white">{{film?.Nom}}</h5>
+      <p class="card-text text-white">{{film?.annee}}</p>
+      <a [routerLink]="['/filmPage/',film?.id]" routerLinkActive="active" class="btn btn-primary">See details</a>
     </div>
 </div>
