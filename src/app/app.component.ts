@@ -11,5 +11,8 @@ import { ListFilmComponent } from './list-film/list-film.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+hey() {
+throw new Error('Method not implemented.');
+}
   title = 'mov-app';
 }

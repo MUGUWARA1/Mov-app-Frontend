@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardFilmComponent } from '../card-film/card-film.component';
 import { FilmPageComponent } from '../film-page/film-page.component';
@@ -11,7 +11,13 @@ import { FilmPageComponent } from '../film-page/film-page.component';
   templateUrl: './list-film.component.html',
   styleUrl: './list-film.component.css'
 })
-export class ListFilmComponent {
+export class ListFilmComponent implements OnInit {
+  constructor(){
+
+  }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   films=[{
     id:1,
     annee:2023,

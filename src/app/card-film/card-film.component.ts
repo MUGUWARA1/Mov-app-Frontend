@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { log } from 'node:console';
 
 @Component({
   selector: 'app-card-film',
@@ -12,5 +13,4 @@ export class CardFilmComponent {
   @Input() imageUrl: string | undefined;
   @Input() title: string | undefined;
   @Input() annee!: Number;
-
 }
