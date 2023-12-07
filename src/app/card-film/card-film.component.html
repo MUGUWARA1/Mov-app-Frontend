@@ -1,7 +1,7 @@
 
-<div class="card bg-secondary  " style="width: 20rem;height:35rem;" id="body-card" >
+<div class="card m-2  " style="width: 20rem;height:35rem; border-radius: 30px;" id="body-card" >
     <img src={{film?.imageURL}} class="card-img-top" alt="..." style="height: 25rem;">
-    <div class="card-body" >
+    <div class="card-body bg-secondary" >
       <h5 class="card-title text-white">{{film?.Nom}}</h5>
       <p class="card-text text-white">{{film?.annee}}</p>
       <a [routerLink]="['/filmPage/',film?.id]"  routerLinkActive="active" class="btn btn-primary">See details</a>
