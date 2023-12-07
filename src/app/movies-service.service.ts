@@ -20,28 +20,28 @@ export class MoviesServiceService {
     Desription :"jjhvdjhvfjvdfjvjdvfjvdjvfjvjfvsjdvfjdsvfjvsjdvdfj"
   },
   {
-    id:2,
+    id:3,
     annee:2020,
     Nom:"Seven",
     imageURL:"./assets/Seven.jpg",
     Desription :"jjhvdjhvfjvdfjvjdvfjvdjvfjvjfvsjdvfjdsvfjvsjdvdfj"
   },
   {
-      id:3,
+      id:4,
       annee:1999,
       Nom:"Forest Gump",
       imageURL:"./assets/Seven.jpg" ,
       Desription :"jjhvdjhvfjvdfjvjdvfjvdjvfjvjfvsjdvfjdsvfjvsjdvdfj"
     }
     ,{
-      id:4,
+      id:5,
       annee:2020,
       Nom:"Seven",
       imageURL:"./assets/Seven.jpg",
       Desription :"jjhvdjhvfjvdfjvjdvfjvdjvfjvjfvsjdvfjdsvfjvsjdvdfj"
     }
     ,{
-      id:5,
+      id:6,
       annee:2020,
       Nom:"Seven",
       imageURL:"./assets/Seven.jpg",

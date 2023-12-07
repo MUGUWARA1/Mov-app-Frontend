@@ -12,6 +12,7 @@ import { Film } from '../Film';
 })
 export class CardFilmComponent {
   @Input() film:Film | undefined;
+JSON: any;
    
   constructor(private router :Router){}
 

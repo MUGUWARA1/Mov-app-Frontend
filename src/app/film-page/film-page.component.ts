@@ -12,13 +12,16 @@ import { MoviesServiceService } from '../movies-service.service';
   styleUrl: './film-page.component.css'
 })
 export class FilmPageComponent implements OnInit{
+  id:any;
   film:any;
   constructor(private route :ActivatedRoute,private moviesservice:MoviesServiceService) {}
   ngOnInit(): void {
-    this.route.params.subscribe((param:any)=>{
-      const id =param['id'];
-      this.film=this.moviesservice.getByidFilm(id);
-  })
+    this.id=Number(this.route.snapshot.paramMap.get('id'))
+    this.film=this.moviesservice.getByidFilm(this.id);
+    console.log(this.film)
+  
+  }
+  
   
 }
-}
+
