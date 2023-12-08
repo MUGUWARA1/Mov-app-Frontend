@@ -1,12 +1,12 @@
-<body>
-    <div style="display: inline-block;">
-        <div>
-            <img src={{film.imageURL}} alt={{film.Nom}} style="height: 500px; width:200px">
+<body >
+    <div class="d-flex m-5">
+        <div >
+            <img src={{film.imageURL}} alt={{film.Nom}} id="image">
         </div>
-        <div>
-            <div><h1>{{film.Nom}}</h1></div>
+        <div  class="container">
+            <div ><h1>{{film.Nom}}</h1></div>
             <div><h4>{{film.annee}}</h4></div>
-            <div><p>{{film.Desription}}</p></div>
+            <div id="Description" ><p >{{film.Desription}}</p></div>
         </div>
     </div>
     
