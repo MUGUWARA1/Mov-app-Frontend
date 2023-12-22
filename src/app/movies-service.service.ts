@@ -1,11 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Film } from './Film';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MoviesServiceService {
-  films=[{
+  API_TOKEN:String ="ca5f9791488cf94fdd19bf25143d4bfd"
+ 
+
+ /* films=[{
     id:1,
     annee:2023,
     Nom:"Mission Impossible",
@@ -48,21 +53,23 @@ export class MoviesServiceService {
       Desription :"jjhvdjhvfjvdfjvjdvfjvdjvfjvjfvsjdvfjdsvfjvsjdvdfj"
 
     }
-  ]
-
-  constructor() { }
+  ]*/
+  
+  constructor(private http : HttpClient) { }
+  url = "https://api.themoviedb.org/3/movie/popular?api_key="+this.API_TOKEN
 
   
-  getAllfilms(){
-    return this.films;
+  getAllfilms():Observable<any>{
+     
+    return this.http.get(this.url)  
   }
 
-  getByidFilm(id:number){
-    for(let f of this.films){
+ /* getByidFilm(id:number){
+    for(let f of this.getAllfilms){
           if(f.id===id){
             return f;
           }
     }
     return 0;
-  }
+  }*/
 }

@@ -16,9 +16,9 @@ export class FilmPageComponent implements OnInit{
   film:any;
   constructor(private route :ActivatedRoute,private moviesservice:MoviesServiceService) {}
   ngOnInit(): void {
-    this.id=Number(this.route.snapshot.paramMap.get('id'))
+    /*this.id=Number(this.route.snapshot.paramMap.get('id'))
     this.film=this.moviesservice.getByidFilm(this.id);
-    console.log(this.film)
+    console.log(this.film)*/
   
   }
   
