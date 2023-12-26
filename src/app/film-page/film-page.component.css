@@ -1,8 +1,12 @@
-#image{
-    height: 500px;
-    width:300px;
+.image{
+    height: 100%;
+    width:100%;
 }
 #Description{
     padding-top: 100px;
     width: 50%;
+}
+.back{
+    background: linear-gradient(rgba(224, 185, 185, 0.91),rgb(21, 172, 241));
+    background-repeat:no-repeat ;
 }

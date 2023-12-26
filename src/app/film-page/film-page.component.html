@@ -1,21 +1,44 @@
-<body  >
-    <div class="flex m-5 bg-color-red-200">
+<body class="back" >
+    <div class="md:flex m-4  ">
 
-        <div >
-            <img class="md:m-3 px-3 w-full" src="{{getImageUrl(filmdetail.poster_path)}}" alt={{filmdetail.original_title} id="image">
+        <div class="p-10 col-md-4"  >
+            <img src="{{getImageUrl(filmdetail.poster_path)}}" alt={{filmdetail.original_title} >
         </div>
-        <div class="m-3">
-            <div >
-                <span class="text-2xl font-bold">{{filmdetail.original_title}}</span>
-            </div>
-            <div>
-                <p >
-                    {{filmdetail.overview}}
-                </p>
-            </div>
+        <div class=" container mt-10 ">
             
+            <!---title-->
+            <div>
+                <span class="pl-2 text-2xl font-bold border-l-4 border-red-800">{{filmdetail.original_title}}</span>
+            </div>
+            <div class="mt-10 ">
+                <div class="mt-5   w-3/4">
+                    <span class="py-1"><strong>Overview:</strong></span>
+                    <p>{{filmdetail.overview}}</p>
+                </div>
+                    <div class="py-2">
+                        <span class="font-bold">Date of release: </span>
+                        <span>{{filmdetail.release_date.slice(0,4)}}</span>
+                    </div>
+                
+                    <div class="py-2">
+                        <span><strong>Genres: </strong></span>
+                        <span *ngFor="let genre of filmdetail.genres"> {{genre.name}}</span>
+                        
+                    </div>
+                    <div>
+                        <span><strong>Popularity: </strong>{{filmdetail.popularity}}</span>
+                    </div>
+                    
+                    
+            </div>
         </div>
         
+    </div>
+    <div class="container">
+        <div>
+            
+        </div>
+
     </div>
 
 </body>

@@ -2,7 +2,7 @@ import { Genre } from "./Genre";
 
 export class FilmDetail{
     id:number 
-    release_date:number 
+    release_date:string 
     original_title:string 
     poster_path:string 
     overview :string ;
