@@ -1,13 +1,21 @@
-<body >
-    <div class="d-flex m-5">
+<body  >
+    <div class="flex m-5 bg-color-red-200">
+
         <div >
-            <img src={{film.imageURL}} alt={{film.Nom}} id="image">
+            <img class="md:m-3 px-3 w-full" src="{{getImageUrl(filmdetail.poster_path)}}" alt={{filmdetail.original_title} id="image">
         </div>
-        <div  class="container">
-            <div ><h1>{{film.Nom}}</h1></div>
-            <div><h4>{{film.annee}}</h4></div>
-            <div id="Description" ><p >{{film.Desription}}</p></div>
+        <div class="m-3">
+            <div >
+                <span class="text-2xl font-bold">{{filmdetail.original_title}}</span>
+            </div>
+            <div>
+                <p >
+                    {{filmdetail.overview}}
+                </p>
+            </div>
+            
         </div>
+        
     </div>
-    
+
 </body>

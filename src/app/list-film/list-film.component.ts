@@ -4,6 +4,7 @@ import { CardFilmComponent } from '../card-film/card-film.component';
 import { FilmPageComponent } from '../film-page/film-page.component';
 import { MoviesServiceService } from '../movies-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { Film } from '../Metier/Film';
 
 
 @Component({
@@ -14,13 +15,12 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './list-film.component.css'
 })
 export class ListFilmComponent implements OnInit {
-   films :any[] | undefined;
+   films :Film[] | undefined;
   constructor(private movserv:MoviesServiceService) {
     
   }
   ngOnInit() {
     this.movserv.getAllfilms().subscribe((data)=>{
-      console.log(data.results)
       this.films=data.results;
     })
   }

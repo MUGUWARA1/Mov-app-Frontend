@@ -1,6 +1,6 @@
 
 <div class="card m-2  " style="width: 20rem;height:35rem;" id="body-card" >
-    <img src={{film?.poster_path}} class="card-img-top" alt="..." style="height: 25rem;">
+    <img src="{{getImageUrl(film?.poster_path)}}" class="card-img-top" alt="{{film?.id}}" style="height: 25rem;">
     <div class="card-body bg-secondary rounded-10" >
       <h5 class="card-title text-white">{{film?.title}}</h5>
       <p class="card-text text-white">{{film?.annee}}</p>

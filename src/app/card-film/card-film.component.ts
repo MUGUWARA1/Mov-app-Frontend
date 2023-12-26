@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router,RouterLink, RouterLinkActive } from '@angular/router';
-import { Film } from '../Film';
+import { Film } from '../Metier/Film';
+import { MoviesServiceService } from '../movies-service.service';
 
 @Component({
   selector: 'app-card-film',
@@ -13,8 +14,14 @@ import { Film } from '../Film';
 export class CardFilmComponent {
   @Input() film:Film | undefined;
 JSON: any;
+
+  getImageUrl(name:string|undefined){
+    const baseUrl = 'https://image.tmdb.org/t/p/w500'+name;
+    return baseUrl;
+  }
    
-  constructor(private router :Router){}
+  constructor(private router :Router,private movserv:MoviesServiceService){}
+  
 
 
 }
