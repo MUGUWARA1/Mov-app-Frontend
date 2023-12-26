@@ -20,9 +20,12 @@
                         <span>{{filmdetail.release_date.slice(0,4)}}</span>
                     </div>
                 
-                    <div class="py-2">
+                    <div class="py-2 flex">
                         <span><strong>Genres: </strong></span>
-                        <span *ngFor="let genre of filmdetail.genres"> {{genre.name}}</span>
+                        <span *ngFor="let genre of filmdetail.genres" >
+                            <div class="ml-1 px-1 rounded-lg bg-red-800 text-gray-300">{{genre.name}}</div> 
+                        </span>
+
                         
                     </div>
                     <div>
@@ -34,11 +37,19 @@
         </div>
         
     </div>
-    <div class="container">
-        <div>
-            
+    <div class="ml-4 px-10">
+        <div class=" mb-5">
+            <span class="text-6xl ">Comments:</span>
+            <br>
         </div>
-
+        <div  *ngFor="let comment of comments">
+            <div id="comment">
+                {{ comment.text }}
+            </div>
+        </div>
+        
+        <!-- Add a form to add new comments -->
+        
     </div>
 
 </body>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardFilmComponent } from '../card-film/card-film.component';
 import { FilmPageComponent } from '../film-page/film-page.component';
-import { MoviesServiceService } from '../movies-service.service';
+import { MoviesServiceService } from '../../Services/moviesServices/movies-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { Film } from '../Metier/Film';
 

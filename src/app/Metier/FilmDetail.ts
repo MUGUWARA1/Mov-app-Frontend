@@ -1,3 +1,4 @@
+import { Commentaire } from "./Commentaire";
 import { Genre } from "./Genre";
 
 export class FilmDetail{

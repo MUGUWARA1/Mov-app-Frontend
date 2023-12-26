@@ -10,3 +10,14 @@
     background: linear-gradient(rgba(224, 185, 185, 0.91),rgb(21, 172, 241));
     background-repeat:no-repeat ;
 }
+#comment{
+    opacity: 1.4;
+    margin-top: 6px;
+    padding: 20px;
+    border-color :white ;
+    border-width:1px ;
+}
+#comment:hover{
+    scale: 1.2;
+    transition: 0.8s;
+}

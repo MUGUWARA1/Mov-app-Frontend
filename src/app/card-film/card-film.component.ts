@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router,RouterLink, RouterLinkActive } from '@angular/router';
 import { Film } from '../Metier/Film';
-import { MoviesServiceService } from '../movies-service.service';
+import { MoviesServiceService } from '../../Services/moviesServices/movies-service.service';
 
 @Component({
   selector: 'app-card-film',
