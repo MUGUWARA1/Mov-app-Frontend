@@ -6,10 +6,6 @@
     padding-top: 100px;
     width: 50%;
 }
-.back{
-    background: linear-gradient(rgba(224, 185, 185, 0.91),rgb(21, 172, 241));
-    background-repeat:no-repeat ;
-}
 #comment{
     opacity: 1.4;
     margin-top: 6px;

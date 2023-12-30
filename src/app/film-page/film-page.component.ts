@@ -2,8 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 import { MoviesServiceService } from '../../Services/moviesServices/movies-service.service';
-import { FilmDetail } from '../Metier/FilmDetail';
-import { Commentaire } from '../Metier/Commentaire';
+import { FilmDetail } from '../Modele/FilmDetail';
+import { Commentaire } from '../Modele/Commentaire';
 import { CommentServiceService } from '../../Services/moviesServices/comment-service.service';
 
 @Component({
@@ -14,18 +14,22 @@ import { CommentServiceService } from '../../Services/moviesServices/comment-ser
   styleUrl: './film-page.component.css'
 })
 export class FilmPageComponent implements OnInit{
-  id:any;
+  id:any=this.route.snapshot.params["id"];
   filmdetail:FilmDetail;
   comments :Commentaire[];
+  favories:number[];
   constructor(private route :ActivatedRoute,private moviesservice:MoviesServiceService,private commentservice :CommentServiceService) {}
   ngOnInit(): void {
     this.getFilmById();
+    this.loadcomments();
+    this.loadFavories;
   }
 
 
- /* loadcomments(){
+  loadcomments(){
     this.comments =this.commentservice.getComments();
-  }*/
+  }
+
 
 
 
@@ -38,6 +42,19 @@ export class FilmPageComponent implements OnInit{
       this.filmdetail=data
     })
   }
+  toggleFavorite() {
+    this.filmdetail.favorited = !this.filmdetail.favorited;
+    if(this.filmdetail.favorited){
+      this.favories.push(this.filmdetail.id)
+    }
+  }
+  loadFavories(){
+    if(this.filmdetail.id in this.favories){
+      this.filmdetail.favorited===true;
+    }
+  }
+  
+
   
 }
 

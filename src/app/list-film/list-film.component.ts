@@ -4,7 +4,7 @@ import { CardFilmComponent } from '../card-film/card-film.component';
 import { FilmPageComponent } from '../film-page/film-page.component';
 import { MoviesServiceService } from '../../Services/moviesServices/movies-service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { Film } from '../Metier/Film';
+import { Film } from '../Modele/Film';
 
 
 @Component({

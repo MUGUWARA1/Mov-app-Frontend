@@ -1,5 +1,5 @@
-<body class="back" >
-    <div class="md:flex m-4  ">
+<body class=" bg-gray-900 text-white" >
+    <div class="md:flex ml-4  ">
 
         <div class="p-10 col-md-4"  >
             <img src="{{getImageUrl(filmdetail.poster_path)}}" alt={{filmdetail.original_title} >
@@ -28,28 +28,60 @@
 
                         
                     </div>
-                    <div>
+                    <div class="py-2">
                         <span><strong>Popularity: </strong>{{filmdetail.popularity}}</span>
                     </div>
-                    
+                    <div class="mt-4">
+                        <div>
+                            <strong>Favorie :</strong>
+                        </div>
+                        @if (filmdetail.favorited) {
+                            <div (click)="toggleFavorite()">
+                                <img class="hover:scale-y-110 mt-4 hover:cursor-pointer"  src="./assets/heartF.png">
+                            </div>
+                        }
+                        @else{
+    
+                            <diV (click)="toggleFavorite()">
+                                <img class="hover:scale-y-110 mt-4 hover:cursor-pointer"  src="./assets/heart.png">
+                            </diV>
+                        }
+                    </div>
+                
                     
             </div>
         </div>
         
     </div>
-    <div class="ml-4 px-10">
+    <div class="ml-4 px-10 mt-0">
         <div class=" mb-5">
             <span class="text-6xl ">Comments:</span>
             <br>
         </div>
-        <div  *ngFor="let comment of comments">
-            <div id="comment">
-                {{ comment.text }}
-            </div>
+        @if (this.comments) 
+        {
+            
+                <div  *ngFor="let comment of comments">
+                    <div id="comment">
+                        {{ comment.text }}
+                    </div>
+                </div>
+            
+
+        }
+        @else {
+                <div>
+                    <h2 class="text-3xl m-4 text-center">No Comments Yet</h2>
+                </div>
+        }   
+        <div>
+            <form>
+                <input placeholder="Enter your comment " class="bg-gray-800 w-10/12 h-20 mb-12  border-white border-1 p-4" >
+                <button class="m-4 bg-red-800 py-2 px-3 rounded-xl hover:bg-blue-600 transform:0.8">Publish</button>
+            </form>
         </div>
         
-        <!-- Add a form to add new comments -->
+    </div><!-- Add a form to add new comments -->
         
-    </div>
 
 </body>

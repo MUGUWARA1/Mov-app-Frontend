@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router,RouterLink, RouterLinkActive } from '@angular/router';
-import { Film } from '../Metier/Film';
+import { Film } from '../Modele/Film';
 import { MoviesServiceService } from '../../Services/moviesServices/movies-service.service';
 
 @Component({

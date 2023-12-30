@@ -1,6 +1,12 @@
 .card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    scale: 0.97;
+    scale: 1.03;
     cursor: pointer;
+    transition: 700ms;
         
+}
+.but{
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
 }

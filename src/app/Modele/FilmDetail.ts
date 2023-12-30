@@ -11,8 +11,8 @@ export class FilmDetail{
     genres:Genre[];
     original_language:string
     popularity:number
+    runtime:number
+    favorited:boolean
 
-
-   
 
 }
