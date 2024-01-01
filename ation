@@ -1,0 +1,91 @@
+[33mcommit e523b21362717e808a707b425e26452dbc47ea01[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Sat Dec 30 17:01:32 2023 +0100
+
+    did some style again
+
+[33mcommit 1ccc5f8d093339a149532f9ce1e6a5016b678162[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Tue Dec 26 21:56:10 2023 +0100
+
+    comments and responsiveness
+
+[33mcommit 9d0df11e73b17c835be713805342877860303a1a[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Tue Dec 26 19:38:08 2023 +0100
+
+    styling the film page {but still basic }
+
+[33mcommit 96bdff7a6569a42fd42d6f0af7f58dfc5c93d4eb[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Tue Dec 26 09:10:11 2023 +0100
+
+    installing tailwind
+    construct Metier Classes and setting filmdetails
+
+[33mcommit 94d9ff87e5d3f9ae174901d50121fd6e57db21a4[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Fri Dec 22 09:46:34 2023 +0100
+
+    Seting the Api and now stuiggling with the Diplay of movies
+
+[33mcommit c399f5551f2322af0e1344bb8df06ce787129729[m[33m ([m[1;31morigin/API_used[m[33m, [m[1;32mAPI_used[m[33m)[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Fri Dec 8 09:22:19 2023 +0100
+
+    manging the film page
+
+[33mcommit 805185a229bd38284e72837041627cd68e454a73[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Fri Dec 8 00:30:36 2023 +0100
+
+    fixing some styles
+
+[33mcommit f78920bca20e06d5aca61fd83f67ff4efc51311d[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Thu Dec 7 19:56:08 2023 +0100
+
+    passing film details in another page
+
+[33mcommit 01916294e661c6a91eaa42683f68400e35f1ca99[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Wed Dec 6 22:55:54 2023 +0100
+
+    Setting routing
+
+[33mcommit 6aa8c1d2674a5822cd00ae726fbf2e5d710b4c18[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Tue Dec 5 23:10:11 2023 +0100
+
+    mov-app
+
+[33mcommit ef0eb93d1d18afb66217e68c73e1629f21ea877f[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Wed Nov 29 17:49:53 2023 +0100
+
+    just fixing the color of text-
+    navbar
+
+[33mcommit 664b889c94723df6e86298df0544a5aebd07594c[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Wed Nov 29 11:38:45 2023 +0100
+
+    nav bar
+
+[33mcommit f844066ae2cda4a2539b86ee1413c7d596ee463c[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Wed Nov 29 11:15:51 2023 +0100
+
+    css
+
+[33mcommit 0ef5af2dc04a9ab947e0a38077af6fc612d6d93a[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Wed Nov 29 11:15:37 2023 +0100
+
+    fix film page
+
+[33mcommit a23307740277b6b6e3b68c1846fbdba4e69c3264[m
+Author: DEROUICH KARIM <106762744+MUGUWARA1@users.noreply.github.com>
+Date:   Wed Nov 29 10:24:14 2023 +0100
+
+    initialisation de projet mov-app

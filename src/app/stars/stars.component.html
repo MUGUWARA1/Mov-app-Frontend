@@ -1,0 +1,5 @@
+<!-- app-star-rating.component.html -->
+<div class="star-rating ">
+    <span  *ngFor="let star of stars(averageVote)" [class.active]="star <= averageVote">&#9733;</span>
+  </div>
+  

@@ -31,6 +31,10 @@
                     <div class="py-2">
                         <span><strong>Popularity: </strong>{{filmdetail.popularity}}</span>
                     </div>
+                    <div class="flex  py-4">
+                        <span><strong>Vote average: </strong></span>
+                        <app-stars class="card-text  text-yellow-400 px-4"  [averageVote]="filmdetail.vote_average"></app-stars>
+                    </div>
                     <div class="mt-4">
                         <div>
                             <strong>Favorie :</strong>
@@ -58,7 +62,7 @@
             <span class="text-6xl ">Comments:</span>
             <br>
         </div>
-        @if (this.comments) 
+        @if (this.comments && this.comments!==[]) 
         {
             
                 <div  *ngFor="let comment of comments">
@@ -75,9 +79,12 @@
                 </div>
         }   
         <div>
-            <form>
-                <input placeholder="Enter your comment " class="bg-gray-800 w-10/12 h-20 mb-12  border-white border-1 p-4" >
-                <button class="m-4 bg-red-800 py-2 px-3 rounded-xl hover:bg-blue-600 transform:0.8">Publish</button>
+            <form (ngSubmit)="submitComment()">
+                <input placeholder="Enter your comment " name="Commtext" class="bg-gray-800 w-10/12 h-20 mb-12  border-white border-1 p-4 rounded-3xl" [(ngModel)]="Commtext" >
+
+                <button type="submit" class="m-4 bg-red-800 py-2 px-3 rounded-xl hover:bg-blue-600 transform:0.8">Publish</button>
+                <p-toast></p-toast>
+                <button type="button" pButton pRipple (click)="show()" label="Show" class="p-button-success">wesh</button>
             </form>
         </div>
         

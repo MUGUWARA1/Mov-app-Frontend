@@ -9,11 +9,14 @@
 #comment{
     opacity: 1.4;
     margin-top: 6px;
-    padding: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding: 10px;
     border-color :white ;
     border-width:1px ;
+    border-radius:20px ;
 }
 #comment:hover{
-    scale: 1.2;
+    scale: 1.02;
     transition: 0.8s;
 }

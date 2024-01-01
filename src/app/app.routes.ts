@@ -6,5 +6,5 @@ import { FilmPageComponent } from './film-page/film-page.component';
 export const routes: Routes = [
     {path:'',component:ListFilmComponent},
     {path:'listFilm', component:ListFilmComponent},
-    {path:'filmPage/:id',component:FilmPageComponent}
+    {path:'filmPage/:id',component:FilmPageComponent},
 ];

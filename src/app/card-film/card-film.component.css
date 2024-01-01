@@ -8,5 +8,10 @@
 .but{
     position: absolute;
     left: 20px;
-    bottom: 40px;
+    bottom: 20px;
+}
+.str{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
 }

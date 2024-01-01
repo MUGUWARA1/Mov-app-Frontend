@@ -13,6 +13,7 @@ export class FilmDetail{
     popularity:number
     runtime:number
     favorited:boolean
+    vote_average:number
 
 
 }
