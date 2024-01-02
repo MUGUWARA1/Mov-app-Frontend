@@ -1,0 +1,20 @@
+
+<body class="loginbg " >
+    <div class="flex justify-center ">
+        <Span class="text-6xl font-bold text-white shadow-md  mt-10 hover:cursor-pointer" id="textmov">Mov-App</Span>
+    </div>
+    <div class="flex justify-center mt-12  " >
+        <form action="" class="  w-2/6 h-4/4  bgform  rounded-xl border-red-800 border-3 p-20 opacity-100"  >
+            <span class="text-white text-xl mb-2 ml-24">Have fun in your movie space </span>
+            <div class="form-floating mb-3  mt-4">
+                <input type="Username" class="form-control" id="floatingInput" name="username" placeholder="Username" [(ngModel)]="formData.username">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" name="password"  placeholder="Password" [(ngModel)]="formData.password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button type="submit" class="but-log " (click)="login()" >Login</button>
+        </form>
+    </div>
+</body>

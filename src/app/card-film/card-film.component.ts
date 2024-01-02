@@ -23,5 +23,9 @@ export class CardFilmComponent {
   constructor(private router :Router,private movserv:MoviesServiceService){}
   
 
+  seeDetails(){
+    this.router.navigateByUrl('main/filmPage/'+this.film.id)
+  }
+
 
 }

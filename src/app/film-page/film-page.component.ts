@@ -7,19 +7,17 @@ import { Commentaire } from '../Modele/Commentaire';
 import { CommentServiceService } from '../../Services/moviesServices/comment-service.service';
 import { StarsComponent } from '../stars/stars.component';
 import {FormGroup, FormsModule} from "@angular/forms";
-import { ToastModule } from 'primeng/toast';
-import { MessageService } from 'primeng/api';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-
+import { User } from '../Modele/User';
+import { AuthService } from '../../Services/moviesServices/auth.service';
+import { LoginComponent } from '../login/login.component';
 
 
 @Component({
   selector: 'app-film-page',
   standalone: true,
-  imports: [CommonModule,StarsComponent,FormsModule,ToastModule],
+  imports: [CommonModule,StarsComponent,FormsModule,LoginComponent],
   templateUrl: './film-page.component.html',
   styleUrl: './film-page.component.css',
-  providers:[MessageService]
 })
 export class FilmPageComponent implements OnInit{
   id:any=this.route.snapshot.params["id"];
@@ -27,12 +25,13 @@ export class FilmPageComponent implements OnInit{
   comments :Commentaire[];
   Commtext:string 
   favories:number[];
-  Commdata: any;
   myForm: FormGroup;
+  user: User;
   constructor(private route :ActivatedRoute,
               private moviesservice:MoviesServiceService,
               private commentservice :CommentServiceService,
-              private messageService: MessageService) {}
+              private LoginComp :LoginComponent
+              ) {}
   ngOnInit(): void {
    
     this.getFilmById();
@@ -41,15 +40,13 @@ export class FilmPageComponent implements OnInit{
   }
 
 
+
   loadcomments(){
     this.commentservice.getCommentsByidFilm(this.id).subscribe(data=>{
         console.log(data)
         this.comments=data;
     });
   }
-  show() {
-    this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Message Content' });
-}
 
 
   submitComment(): void{
@@ -77,7 +74,9 @@ export class FilmPageComponent implements OnInit{
   }
 
 
+  loadUser(){
 
+  }
 
   getImageUrl(name:string|undefined){
     const baseUrl = 'https://image.tmdb.org/t/p/w500'+name;
@@ -99,12 +98,11 @@ export class FilmPageComponent implements OnInit{
       this.filmdetail.favorited===true;
     }
   }
-  
+
 
   
 }
 
-function submitComment() {
-  throw new Error('Function not implemented.');
-}
+
+
 

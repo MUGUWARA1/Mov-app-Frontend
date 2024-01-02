@@ -1,0 +1,20 @@
+.hover-line {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .hover-line::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px; /* Adjust the line thickness as needed */
+    background-color: #ffffff; /* Adjust the line color as needed */
+    transition: width 0.3s ease; /* Adjust the transition duration and easing as needed */
+  }
+
+  .hover-line:hover::before {
+    width: 100%;
+  }

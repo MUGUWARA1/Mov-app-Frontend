@@ -4,6 +4,6 @@
     <div class="card-body bg-red-800 rounded-10"  >
       <h5 class="card-title text-white">{{film?.title}}</h5>
       <app-stars  class="card-text  text-white str py-1"  [averageVote]="film.vote_average">{{film.vote_average}}min</app-stars>
-      <a [routerLink]="['/filmPage/',film?.id]"  routerLinkActive="active" class="btn btn-primary but">See details</a>
+      <a class="btn btn-primary but" (click)="seeDetails()">See details</a>
     </div>
 </div>
