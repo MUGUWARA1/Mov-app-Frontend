@@ -2,7 +2,7 @@
 <div class="card m-2  " style="width: 20rem;height:35rem;" id="body-card" >
     <img src="{{getImageUrl(film?.poster_path)}}" class="card-img-top" alt="{{film?.id}}" style="height: 25rem;">
     <div class="card-body bg-red-800 rounded-10"  >
-      <h5 class="card-title text-white">{{film?.title}}</h5>
+      <h5 class="card-title text-white">{{film?.original_title}}</h5>
       <app-stars  class="card-text  text-white str py-1"  [averageVote]="film.vote_average">{{film.vote_average}}min</app-stars>
       <a class="btn btn-primary but" (click)="seeDetails()">See details</a>
     </div>

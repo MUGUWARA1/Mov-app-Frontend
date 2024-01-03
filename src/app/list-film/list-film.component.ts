@@ -5,6 +5,8 @@ import { FilmPageComponent } from '../film-page/film-page.component';
 import { MoviesServiceService } from '../../Services/moviesServices/movies-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { Film } from '../Modele/Film';
+import { FilmDetail } from '../Modele/FilmDetail';
+import { filmData } from '../Modele/filmData';
 
 
 @Component({
@@ -15,7 +17,8 @@ import { Film } from '../Modele/Film';
   styleUrl: './list-film.component.css'
 })
 export class ListFilmComponent implements OnInit {
-   films :Film[] | undefined;
+   films :FilmDetail[] | undefined;
+
   constructor(private movserv:MoviesServiceService) {
     
   }
@@ -24,4 +27,6 @@ export class ListFilmComponent implements OnInit {
       this.films=data.results;
     })
   }
+  
+
 }

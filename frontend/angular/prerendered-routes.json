@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/",
+    "/main",
+    "/main/favories",
+    "/main/home"
+  ]
+}

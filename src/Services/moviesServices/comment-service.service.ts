@@ -21,8 +21,6 @@ export class CommentServiceService {
   postCommentaire( c :Commentaire):Observable<any>{
     const url="http://localhost:8090/comments"
     return this.http.post<any>(url,c);
-
-
   }
 
 }

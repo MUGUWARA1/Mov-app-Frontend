@@ -39,7 +39,7 @@
                         <div>
                             <strong>Favorie :</strong>
                         </div>
-                        @if (filmdetail.favorited) {
+                        @if (this.favorited===true) {
                             <div (click)="toggleFavorite()">
                                 <img class="hover:scale-y-110 mt-4 hover:cursor-pointer"  src="./assets/heartF.png">
                             </div>
@@ -66,6 +66,13 @@
         {
             
                 <div  *ngFor="let comment of comments">
+                    <div>
+                        <span>
+                            {{usercom(comment)}}
+                            
+                        </span>
+                    </div>
+
                     <div id="comment">
                         {{ comment.text }}
                     </div>

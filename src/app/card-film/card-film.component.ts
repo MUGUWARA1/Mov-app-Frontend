@@ -4,6 +4,7 @@ import { Router,RouterLink, RouterLinkActive } from '@angular/router';
 import { Film } from '../Modele/Film';
 import { MoviesServiceService } from '../../Services/moviesServices/movies-service.service';
 import { StarsComponent } from '../stars/stars.component';
+import { FilmDetail } from '../Modele/FilmDetail';
 
 @Component({
   selector: 'app-card-film',
@@ -13,7 +14,7 @@ import { StarsComponent } from '../stars/stars.component';
   styleUrl: './card-film.component.css'
 })
 export class CardFilmComponent {
-  @Input() film:Film | undefined;
+  @Input() film:FilmDetail | undefined;
 
   getImageUrl(name:string|undefined){
     const baseUrl = 'https://image.tmdb.org/t/p/w500'+name;

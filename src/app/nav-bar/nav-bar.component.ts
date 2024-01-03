@@ -8,14 +8,18 @@ import { Router } from '@angular/router';
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
-export class NavBarComponent {
-  constructor(private router:Router) {
+export class NavBarComponent  {
+  constructor(private router:Router ,) {
     
   }
 
   
   homepage(){
     this.router.navigateByUrl('main/home')
+   
+  }
+  Favpage(){
+    this.router.navigateByUrl('main/favories')
    
   }
       
