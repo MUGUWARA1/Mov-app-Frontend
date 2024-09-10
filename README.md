@@ -2,25 +2,37 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
 
-## Development server
+# MovApp Frontend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This is the frontend of Mov-App, a movie browsing platform that uses the TMDb API for movie data. Built using Angular, the frontend provides a user-friendly interface for searching and viewing movie information.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Responsive movie search interface
+- Display of detailed movie information such as title, rating, and description
+- Pagination for easy browsing of large movie lists
+- Integrated with TMDb API for real-time movie data
+- Built with Angular framework
 
-## Build
+## Tech Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular**: Frontend framework
+- **TMDb API**: Movie data provider
+- **TypeScript**: Programming language
+- **HTML5/CSS3**: Frontend design
+- **Bootstrap/Tailwind**: Tailwind/CSS framework for styling
 
-## Running unit tests
+## Setup Instructions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository: `git clone https://github.com/yourusername/mov-app-frontend.git`
+2. Navigate to the project directory: `cd mov-app-frontend`
+3. Install dependencies: `npm install`
+4. Run the application: `ng serve`
+5. Access the application at `http://localhost:4200`
 
-## Running end-to-end tests
+## API Integration
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The frontend communicates with the TMDb API to fetch movie details and display them to the user. Make sure to replace the API key in the configuration file.
 
 ## Further help
 
