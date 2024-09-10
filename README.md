@@ -1,4 +1,4 @@
-# MovApp
+![photo_5981141263245755351_y](https://github.com/user-attachments/assets/1503ca7d-64d5-44ea-838a-ad3c58f81f6c)# MovApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
 
@@ -37,3 +37,9 @@ The frontend communicates with the TMDb API to fetch movie details and display t
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+![photo_5981141263245755351_y](https://github.com/user-attachments/assets/c1e1230f-e531-4826-a46f-177aa3f9c341)
+![photo_5981141263245755350_y](https://github.com/user-attachments/assets/c1dc3e16-5e36-499b-93a8-87f0a13182e7)
+
+
+
